@@ -7,9 +7,9 @@ export default function App() {
       <View style={styles.profile}>
         <Image
           style={styles.image}
-          source={require("./images/pic.png")} // static image
+          source={require("./images/mypic.png")} // static image
         />
-        <Text style={styles.name}>Angelo Maldora</Text>
+        <Text style={styles.name}>Ailen Mae Marabulas</Text>
         <Text style={styles.course}>Information Technology 3</Text>
       </View>
       <Text style={styles.subject}>My Subjects</Text>
@@ -58,7 +58,13 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
+ 
+  subject: {
+    fontSize: 15,
+    marginTop: 20,
+    marginBottom: 5,
+  },
+   container: {
     flex: 1,
     backgroundColor: "white",
     alignItems: "flex-start",
@@ -74,24 +80,6 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 40,
     padding: 10,
     flexDirection: "column",
-  },
-  maintext: {
-    color: "white",
-    marginTop: 20,
-  },
-  name: {
-    fontSize: 30,
-    color: "white",
-  },
-  course: {
-    fontSize: 20,
-    color: "white",
-    marginBottom: 10,
-  },
-  subject: {
-    fontSize: 15,
-    marginTop: 20,
-    marginBottom: 5,
   },
   sub1: {
     fontWeight: "bold",
@@ -128,5 +116,18 @@ const styles = StyleSheet.create({
   row1: {
     flexDirection: "column",
     alignItems: "flex-start",
+  },
+    maintext: {
+    color: "white",
+    marginTop: 20,
+  },
+  name: {
+    fontSize: 30,
+    color: "white",
+  },
+  course: {
+    fontSize: 20,
+    color: "white",
+    marginBottom: 10,
   },
 });
